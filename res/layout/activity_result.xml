@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/result_url"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/recycler"
+        android:onClick="gobrowser"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textColor="#651FFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shareback"
+        android:onClick="savesql"
+        android:text="Save "
+        android:textColor="@drawable/blackwhite"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/result_url"
+        app:layout_constraintTop_toBottomOf="@+id/result_url" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/saveback"
+        android:onClick="sharelink"
+
+        android:text="Share "
+        android:textColor="@drawable/blackwhite"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/result_url"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:paddingLeft="18dp"
+        android:text="Click The URL :-"
+        android:textColor="@drawable/blackwhite"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mrec" />
+
+    <com.startapp.sdk.ads.banner.Mrec
+        android:id="@+id/mrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
